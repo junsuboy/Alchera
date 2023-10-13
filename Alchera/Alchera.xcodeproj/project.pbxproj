@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EA2AD9080C00FF0F97 /* AppDelegate.swift */; };
 		254990ED2AD9080C00FF0F97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EC2AD9080C00FF0F97 /* SceneDelegate.swift */; };
-		254990EF2AD9080C00FF0F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EE2AD9080C00FF0F97 /* ViewController.swift */; };
+		254990EF2AD9080C00FF0F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EE2AD9080C00FF0F97 /* MainViewController.swift */; };
 		254990F22AD9080C00FF0F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254990F02AD9080C00FF0F97 /* Main.storyboard */; };
 		254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254990F32AD9080D00FF0F97 /* Assets.xcassets */; };
-		254990F72AD9080D00FF0F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254990F52AD9080D00FF0F97 /* LaunchScreen.storyboard */; };
+		254991002AD9163700FF0F97 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 254990FF2AD9163700FF0F97 /* Lottie */; };
+		254991042AD91CCD00FF0F97 /* alchera.json in Resources */ = {isa = PBXBuildFile; fileRef = 254991032AD91CCD00FF0F97 /* alchera.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		254990E72AD9080C00FF0F97 /* Alchera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		254990EA2AD9080C00FF0F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254990EC2AD9080C00FF0F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		254990EE2AD9080C00FF0F97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		254990EE2AD9080C00FF0F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		254990F12AD9080C00FF0F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		254990F32AD9080D00FF0F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		254990F62AD9080D00FF0F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254990F82AD9080D00FF0F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254991032AD91CCD00FF0F97 /* alchera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alchera.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254991002AD9163700FF0F97 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +60,11 @@
 			children = (
 				254990EA2AD9080C00FF0F97 /* AppDelegate.swift */,
 				254990EC2AD9080C00FF0F97 /* SceneDelegate.swift */,
-				254990EE2AD9080C00FF0F97 /* ViewController.swift */,
+				254990EE2AD9080C00FF0F97 /* MainViewController.swift */,
 				254990F02AD9080C00FF0F97 /* Main.storyboard */,
 				254990F32AD9080D00FF0F97 /* Assets.xcassets */,
-				254990F52AD9080D00FF0F97 /* LaunchScreen.storyboard */,
 				254990F82AD9080D00FF0F97 /* Info.plist */,
+				254991032AD91CCD00FF0F97 /* alchera.json */,
 			);
 			path = Alchera;
 			sourceTree = "<group>";
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Alchera;
+			packageProductDependencies = (
+				254990FF2AD9163700FF0F97 /* Lottie */,
+			);
 			productName = Alchera;
 			productReference = 254990E72AD9080C00FF0F97 /* Alchera.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 254990DE2AD9080C00FF0F97;
+			packageReferences = (
+				254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 254990E82AD9080C00FF0F97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254990F72AD9080D00FF0F97 /* LaunchScreen.storyboard in Resources */,
+				254991042AD91CCD00FF0F97 /* alchera.json in Resources */,
 				254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */,
 				254990F22AD9080C00FF0F97 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254990EF2AD9080C00FF0F97 /* ViewController.swift in Sources */,
+				254990EF2AD9080C00FF0F97 /* MainViewController.swift in Sources */,
 				254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */,
 				254990ED2AD9080C00FF0F97 /* SceneDelegate.swift in Sources */,
 			);
@@ -153,14 +161,6 @@
 				254990F12AD9080C00FF0F97 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		254990F52AD9080D00FF0F97 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				254990F62AD9080D00FF0F97 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		254990FF2AD9163700FF0F97 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 254990DF2AD9080C00FF0F97 /* Project object */;
 }
