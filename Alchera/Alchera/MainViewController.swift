@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         
         animationView.frame = CGRect(x: 0, y: 0, width: 600, height: 600)
         animationView.center = view.center
-        animationView.contentMode = .scaleAspectFill
+        animationView.contentMode = .scaleAspectFit
         
         view.addSubview(animationView)
         
