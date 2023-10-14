@@ -1,28 +1,38 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Alchera
 //
-//  Created by ts3 on 2023/10/13.
+//  Created by Junsu Jang on 10/13/23.
 //
 
-import UIKit
 import Lottie
+import SnapKit
+import UIKit
 
 class MainViewController: UIViewController {
-    let animationView = LottieAnimationView(name: "alchera")
+    let swiftLottieView = LottieAnimationView(name: "spinswift")
+    let topView = UIView()
+    let bottomView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .black
+        view.addSubview(swiftLottieView)
+        view.addSubview(topView)
+        view.addSubview(bottomView)
         
-        animationView.frame = CGRect(x: 0, y: 0, width: 600, height: 600)
-        animationView.center = view.center
-        animationView.contentMode = .scaleAspectFit
-        
-        view.addSubview(animationView)
-        
-        animationView.play { finish in
-            self.animationView.removeFromSuperview()
+        setUI()
+    }
+}
+
+extension MainViewController {
+    func setUI() {
+        swiftLottieView.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.centerX.equalToSuperview()
         }
+        swiftLottieView.loopMode = .loop
+        swiftLottieView.play()
     }
 }

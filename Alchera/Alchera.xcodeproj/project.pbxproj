@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EA2AD9080C00FF0F97 /* AppDelegate.swift */; };
-		254990EF2AD9080C00FF0F97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EE2AD9080C00FF0F97 /* MainViewController.swift */; };
+		254990EF2AD9080C00FF0F97 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254990EE2AD9080C00FF0F97 /* SplashViewController.swift */; };
 		254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254990F32AD9080D00FF0F97 /* Assets.xcassets */; };
 		254991002AD9163700FF0F97 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 254990FF2AD9163700FF0F97 /* Lottie */; };
 		254991042AD91CCD00FF0F97 /* alchera.json in Resources */ = {isa = PBXBuildFile; fileRef = 254991032AD91CCD00FF0F97 /* alchera.json */; };
+		8BFD642E2AD975590047CB92 /* spinswift.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BFD642D2AD975590047CB92 /* spinswift.json */; };
+		8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD642F2AD976A80047CB92 /* MainViewController.swift */; };
+		8BFD64332AD981210047CB92 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BFD64322AD981210047CB92 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		254990E72AD9080C00FF0F97 /* Alchera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		254990EA2AD9080C00FF0F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		254990EE2AD9080C00FF0F97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		254990EE2AD9080C00FF0F97 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		254990F32AD9080D00FF0F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254990F82AD9080D00FF0F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		254991032AD91CCD00FF0F97 /* alchera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alchera.json; sourceTree = "<group>"; };
+		8BFD642D2AD975590047CB92 /* spinswift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinswift.json; sourceTree = "<group>"; };
+		8BFD642F2AD976A80047CB92 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254991002AD9163700FF0F97 /* Lottie in Frameworks */,
+				8BFD64332AD981210047CB92 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				254990EA2AD9080C00FF0F97 /* AppDelegate.swift */,
-				254990EE2AD9080C00FF0F97 /* MainViewController.swift */,
+				254990EE2AD9080C00FF0F97 /* SplashViewController.swift */,
+				8BFD642F2AD976A80047CB92 /* MainViewController.swift */,
 				254990F32AD9080D00FF0F97 /* Assets.xcassets */,
 				254990F82AD9080D00FF0F97 /* Info.plist */,
 				254991032AD91CCD00FF0F97 /* alchera.json */,
+				8BFD642D2AD975590047CB92 /* spinswift.json */,
 			);
 			path = Alchera;
 			sourceTree = "<group>";
@@ -81,6 +89,7 @@
 			name = Alchera;
 			packageProductDependencies = (
 				254990FF2AD9163700FF0F97 /* Lottie */,
+				8BFD64322AD981210047CB92 /* SnapKit */,
 			);
 			productName = Alchera;
 			productReference = 254990E72AD9080C00FF0F97 /* Alchera.app */;
@@ -112,6 +121,7 @@
 			mainGroup = 254990DE2AD9080C00FF0F97;
 			packageReferences = (
 				254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				8BFD64312AD981210047CB92 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 254990E82AD9080C00FF0F97 /* Products */;
 			projectDirPath = "";
@@ -128,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254991042AD91CCD00FF0F97 /* alchera.json in Resources */,
+				8BFD642E2AD975590047CB92 /* spinswift.json in Resources */,
 				254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254990EF2AD9080C00FF0F97 /* MainViewController.swift in Sources */,
+				8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */,
+				254990EF2AD9080C00FF0F97 /* SplashViewController.swift in Sources */,
 				254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +362,14 @@
 				minimumVersion = 4.3.3;
 			};
 		};
+		8BFD64312AD981210047CB92 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -357,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		8BFD64322AD981210047CB92 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BFD64312AD981210047CB92 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
