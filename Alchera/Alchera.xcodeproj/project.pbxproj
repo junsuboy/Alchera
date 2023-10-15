@@ -14,6 +14,13 @@
 		254991042AD91CCD00FF0F97 /* alchera.json in Resources */ = {isa = PBXBuildFile; fileRef = 254991032AD91CCD00FF0F97 /* alchera.json */; };
 		8BA532962ADB7F9400621F90 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532952ADB7F9400621F90 /* CameraViewController.swift */; };
 		8BA5329C2ADBB74300621F90 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */; };
+		8BA5329F2ADBDFCB00621F90 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA5329E2ADBDFCB00621F90 /* MessageKit */; };
+		8BA532A22ADBE02D00621F90 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA532A12ADBE02D00621F90 /* ChatGPTSwift */; };
+		8BA532A52ADBE07100621F90 /* ChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532A42ADBE07100621F90 /* ChatGPTViewController.swift */; };
+		8BA532A72ADBE1AF00621F90 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532A62ADBE1AF00621F90 /* Message.swift */; };
+		8BA532A92ADBE2EE00621F90 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532A82ADBE2EE00621F90 /* Channel.swift */; };
+		8BA532AC2ADBF11A00621F90 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA532AB2ADBF11A00621F90 /* WebKit.framework */; };
+		8BA532AF2ADBF13C00621F90 /* AlcheraWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532AE2ADBF13C00621F90 /* AlcheraWebView.swift */; };
 		8BFD642E2AD975590047CB92 /* spinswift.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BFD642D2AD975590047CB92 /* spinswift.json */; };
 		8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD642F2AD976A80047CB92 /* MainViewController.swift */; };
 		8BFD64332AD981210047CB92 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BFD64322AD981210047CB92 /* SnapKit */; };
@@ -28,6 +35,11 @@
 		254991032AD91CCD00FF0F97 /* alchera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alchera.json; sourceTree = "<group>"; };
 		8BA532952ADB7F9400621F90 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
+		8BA532A42ADBE07100621F90 /* ChatGPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTViewController.swift; sourceTree = "<group>"; };
+		8BA532A62ADBE1AF00621F90 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8BA532A82ADBE2EE00621F90 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		8BA532AB2ADBF11A00621F90 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8BA532AE2ADBF13C00621F90 /* AlcheraWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcheraWebView.swift; sourceTree = "<group>"; };
 		8BFD642D2AD975590047CB92 /* spinswift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinswift.json; sourceTree = "<group>"; };
 		8BFD642F2AD976A80047CB92 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA532AC2ADBF11A00621F90 /* WebKit.framework in Frameworks */,
+				8BA532A22ADBE02D00621F90 /* ChatGPTSwift in Frameworks */,
+				8BA5329F2ADBDFCB00621F90 /* MessageKit in Frameworks */,
 				254991002AD9163700FF0F97 /* Lottie in Frameworks */,
 				8BFD64332AD981210047CB92 /* SnapKit in Frameworks */,
 			);
@@ -50,6 +65,7 @@
 			children = (
 				254990E92AD9080C00FF0F97 /* Alchera */,
 				254990E82AD9080C00FF0F97 /* Products */,
+				8BA532AA2ADBF11A00621F90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +80,9 @@
 		254990E92AD9080C00FF0F97 /* Alchera */ = {
 			isa = PBXGroup;
 			children = (
+				8BA532AD2ADBF12D00621F90 /* Web */,
 				8BA532922ADB7F5E00621F90 /* Camera */,
+				8BA532A32ADBE05E00621F90 /* ChatGPT */,
 				254990EA2AD9080C00FF0F97 /* AppDelegate.swift */,
 				254990EE2AD9080C00FF0F97 /* SplashViewController.swift */,
 				8BFD642F2AD976A80047CB92 /* MainViewController.swift */,
@@ -83,6 +101,32 @@
 				8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		8BA532A32ADBE05E00621F90 /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				8BA532A42ADBE07100621F90 /* ChatGPTViewController.swift */,
+				8BA532A62ADBE1AF00621F90 /* Message.swift */,
+				8BA532A82ADBE2EE00621F90 /* Channel.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		8BA532AA2ADBF11A00621F90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA532AB2ADBF11A00621F90 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA532AD2ADBF12D00621F90 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8BA532AE2ADBF13C00621F90 /* AlcheraWebView.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +148,8 @@
 			packageProductDependencies = (
 				254990FF2AD9163700FF0F97 /* Lottie */,
 				8BFD64322AD981210047CB92 /* SnapKit */,
+				8BA5329E2ADBDFCB00621F90 /* MessageKit */,
+				8BA532A12ADBE02D00621F90 /* ChatGPTSwift */,
 			);
 			productName = Alchera;
 			productReference = 254990E72AD9080C00FF0F97 /* Alchera.app */;
@@ -136,6 +182,8 @@
 			packageReferences = (
 				254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				8BFD64312AD981210047CB92 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8BA5329D2ADBDFCB00621F90 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				8BA532A02ADBE02C00621F90 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
 			);
 			productRefGroup = 254990E82AD9080C00FF0F97 /* Products */;
 			projectDirPath = "";
@@ -165,8 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA532AF2ADBF13C00621F90 /* AlcheraWebView.swift in Sources */,
+				8BA532A92ADBE2EE00621F90 /* Channel.swift in Sources */,
 				8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */,
 				254990EF2AD9080C00FF0F97 /* SplashViewController.swift in Sources */,
+				8BA532A52ADBE07100621F90 /* ChatGPTViewController.swift in Sources */,
+				8BA532A72ADBE1AF00621F90 /* Message.swift in Sources */,
 				254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */,
 				8BA532962ADB7F9400621F90 /* CameraViewController.swift in Sources */,
 			);
@@ -380,6 +432,22 @@
 				minimumVersion = 4.3.3;
 			};
 		};
+		8BA5329D2ADBDFCB00621F90 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		8BA532A02ADBE02C00621F90 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
 		8BFD64312AD981210047CB92 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -395,6 +463,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 254990FE2AD9163700FF0F97 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		8BA5329E2ADBDFCB00621F90 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA5329D2ADBDFCB00621F90 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		8BA532A12ADBE02D00621F90 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA532A02ADBE02C00621F90 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
 		};
 		8BFD64322AD981210047CB92 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

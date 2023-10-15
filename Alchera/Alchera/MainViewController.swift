@@ -70,7 +70,7 @@ extension MainViewController {
         chatGPTLabel.font = .boldSystemFont(ofSize: 16)
         organizationView.backgroundColor = .blue
         organizationView.layer.cornerRadius = 10
-        organizationLabel.text = "ChatGPT"
+        organizationLabel.text = "Organization"
         organizationLabel.font = .boldSystemFont(ofSize: 16)
         alcheraWebView.backgroundColor = .blue
         alcheraWebView.layer.cornerRadius = 10
@@ -203,11 +203,11 @@ extension MainViewController {
                 .instantiateViewController(withIdentifier: "cameraViewController") as? CameraViewController
             self.navigationController?.pushViewController(vc!, animated: true)
         } else if subview == chatGPTView {
-            print("chatGPTView")
+            self.navigationController?.pushViewController(ChatGPTViewController(channel: Channel(name: "chatGPT")), animated: true)
         } else if subview == organizationView {
             print("organizationView")
         } else if subview == alcheraWebView {
-            print("alcheraWebView")
+            self.navigationController?.pushViewController(AlcheraWebView(), animated: true)
         } else if subview == undefinedView {
             print("undefinedView")
         }
