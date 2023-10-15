@@ -23,7 +23,8 @@ class SplashViewController: UIViewController {
         
         splashView.play { finish in
             self.splashView.removeFromSuperview()
-            self.present(MainViewController(), animated: false)
+            
+            self.navigationController?.pushViewController(MainViewController(), animated: false)
         }
     }
 }
