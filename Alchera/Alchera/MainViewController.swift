@@ -199,7 +199,9 @@ extension MainViewController {
         let subview = view?.hitTest(loc, with: nil)
         
         if subview == cameraView {
-            print("cameraView")
+            let vc = UIStoryboard(name: "CameraViewController", bundle: nil)
+                .instantiateViewController(withIdentifier: "cameraViewController") as? CameraViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
         } else if subview == chatGPTView {
             print("chatGPTView")
         } else if subview == organizationView {

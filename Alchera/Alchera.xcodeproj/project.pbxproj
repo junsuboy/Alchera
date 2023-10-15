@@ -12,6 +12,8 @@
 		254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254990F32AD9080D00FF0F97 /* Assets.xcassets */; };
 		254991002AD9163700FF0F97 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 254990FF2AD9163700FF0F97 /* Lottie */; };
 		254991042AD91CCD00FF0F97 /* alchera.json in Resources */ = {isa = PBXBuildFile; fileRef = 254991032AD91CCD00FF0F97 /* alchera.json */; };
+		8BA532962ADB7F9400621F90 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA532952ADB7F9400621F90 /* CameraViewController.swift */; };
+		8BA5329C2ADBB74300621F90 /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */; };
 		8BFD642E2AD975590047CB92 /* spinswift.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BFD642D2AD975590047CB92 /* spinswift.json */; };
 		8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD642F2AD976A80047CB92 /* MainViewController.swift */; };
 		8BFD64332AD981210047CB92 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8BFD64322AD981210047CB92 /* SnapKit */; };
@@ -24,6 +26,8 @@
 		254990F32AD9080D00FF0F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254990F82AD9080D00FF0F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		254991032AD91CCD00FF0F97 /* alchera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alchera.json; sourceTree = "<group>"; };
+		8BA532952ADB7F9400621F90 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
 		8BFD642D2AD975590047CB92 /* spinswift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spinswift.json; sourceTree = "<group>"; };
 		8BFD642F2AD976A80047CB92 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,7 @@
 		254990E92AD9080C00FF0F97 /* Alchera */ = {
 			isa = PBXGroup;
 			children = (
+				8BA532922ADB7F5E00621F90 /* Camera */,
 				254990EA2AD9080C00FF0F97 /* AppDelegate.swift */,
 				254990EE2AD9080C00FF0F97 /* SplashViewController.swift */,
 				8BFD642F2AD976A80047CB92 /* MainViewController.swift */,
@@ -69,6 +74,15 @@
 				8BFD642D2AD975590047CB92 /* spinswift.json */,
 			);
 			path = Alchera;
+			sourceTree = "<group>";
+		};
+		8BA532922ADB7F5E00621F90 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8BA532952ADB7F9400621F90 /* CameraViewController.swift */,
+				8BA5329B2ADBB74300621F90 /* CameraViewController.storyboard */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 			files = (
 				254991042AD91CCD00FF0F97 /* alchera.json in Resources */,
 				8BFD642E2AD975590047CB92 /* spinswift.json in Resources */,
+				8BA5329C2ADBB74300621F90 /* CameraViewController.storyboard in Resources */,
 				254990F42AD9080D00FF0F97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +168,7 @@
 				8BFD64302AD976A80047CB92 /* MainViewController.swift in Sources */,
 				254990EF2AD9080C00FF0F97 /* SplashViewController.swift in Sources */,
 				254990EB2AD9080C00FF0F97 /* AppDelegate.swift in Sources */,
+				8BA532962ADB7F9400621F90 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>이 앱에서 사진을 추가하려고 합니다. 허용하시겠습니까?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>이 앱에서 사진에 접근하려고 합니다. 허용하시겠습니까?</string>
+	<key>NSCameraUsageDescription</key>
+	<string>이 앱에서 카메라를 사용하려고 합니다. 허용하시겠습니까?</string>
+</dict>
 </plist>
